@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------- */
+/*--------- reset basic styles (NEW) ----------- */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+} */
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* button {
+  cursor: pointer;
+} */
+
+/* --------------------------------------------- */
+/* ----------- STYLES task-1 (New) ------------- */
+
+.task1 {
+  margin: 24px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* UL */
+.itemCategories {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* .item {} */
+
+/* LI */
+.itemGroup {
+  background-color: #eeeef9;
+  border-radius: 5%;
+  width: 100%;
+  padding: 16px;
+}
+
+.itemGroupHeading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.itemGroupList {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.itemGroupElement {
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* --------------------------------------------- */
+/* ----------- STYLES task-2 (New) ------------- */
+
+/* width: calc((100% - 24px) / 2);  24 = 12*2*/
+
+.galleryBody {
+  max-width: 1440px;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding: 156px 100px;
+}
+
+/* .img-item {} */
+
+img {
+  display: flex;
+  width: 360px;
+  height: 300px;
+  object-fit: cover; /* Обрезает края, сохраняя пропорции центральной части */
+  object-position: center; /* (Опционально) центрирует область обрезки */
+  border-radius: 5%;
+}
+/* --------------------------------------------- */
+/* ----------- STYLES task-3 (New) ------------- */
+
+.inputBody {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  border: #212121;
+  /* padding: 24px; */
+  /* width: 408px; */
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.task-3-input {
+  margin-top: 24px;
+  margin-left: 24px;
+  padding: 8px 16px;
+  width: 360px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.task-3-output {
+  margin-top: 24px;
+  margin-left: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+/* --------------------------------------------- */
+/* ----------- STYLES task-4 (New) ------------- */
+.formBody {
+  width: 408px;
+}
+
+.formBody .login-form {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 24px;
+  gap: 8px;
+}
+
+.formBody .form-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.formBody .form-input:hover,
+.formBody .form-input:focus {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.formBody button {
+  margin-top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+  border: #4e75ff;
+  background: #2b53e5;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.formBody button:hover,
+.formBody button:focus {
+  cursor: pointer;
+  background: #6c8cff;
+}
+
+/* --------------------------------------------- */
+/* ----------- STYLES task-5 (New) ------------- */
+/* нет правок */
