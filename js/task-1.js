@@ -1,11 +1,31 @@
-const categories = document.querySelector("#categories");
-console.log(`Number of categories: ${categories.children.length}`);
+// ---------------------------
+// допрацювання 1
+// ---------------------------
+// const categories = document.querySelector("#categories");
+// console.log(`Number of categories: ${categories.children.length}`);
 
-const item = document.querySelector(".item");
-const itemList = document.querySelectorAll(".item ul");
-const itemListLength = itemList.forEach((item) => {
-  console.log(`Category: ${item.previousElementSibling.textContent}`);
-  console.log(`Elements: ${item.children.length}`);
+// const item = document.querySelector(".item");
+// const itemList = document.querySelectorAll(".item ul");
+// const itemListLength = itemList.forEach((item) => {
+//   console.log(`Category: ${item.previousElementSibling.textContent}`);
+//   console.log(`Elements: ${item.children.length}`);
+// });
+
+// ---------------------------
+// допрацювання 2
+// ---------------------------
+
+const categoriesList = document.querySelector("#categories");
+const items = categoriesList.querySelectorAll(".item");
+
+console.log(`Number of categories: ${items.length}`);
+
+items.forEach((item) => {
+  const title = item.querySelector("h2").textContent.trim();
+  const elementsCount = item.querySelectorAll("ul li").length;
+
+  console.log(`Category: ${title}`);
+  console.log(`Elements: ${elementsCount}`);
 });
 
 // ===========================================

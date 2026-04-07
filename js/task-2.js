@@ -33,7 +33,7 @@ function createElement(arr) {
     .map(
       (image) => `
       <li class="img-item">
-       <img src="${image.url}" alt="${image.alt} width="360"/>
+       <img src="${image.url}" alt="${image.alt}"/>
       </li>
   `,
     )
